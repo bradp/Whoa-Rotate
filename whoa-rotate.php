@@ -8,8 +8,7 @@ Author URI: http://bradparbs.com
 */
 
 function whoarotate(){
-    ?>
-    <style>
+    return "<style>
     @-webkit-keyframes rotate {
         0%   { -webkit-transform:rotate(0deg);}
         100% { -webkit-transform:rotate(390deg); }
@@ -18,7 +17,7 @@ function whoarotate(){
         -webkit-animation: rotate 5s infinite;
         }
     </style>
-    <?
+    ";
 }
 
 add_shortcode('whoarotate','whoarotate');
